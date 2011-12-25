@@ -9,11 +9,18 @@ gem 'sqlite3', '1.3.3'
 
 group :development do
   gem 'rspec-rails', '2.6.1'
+  gem "guard"
+  gem "guard-rspec"
 end
 
 group :test do
   gem 'rspec-rails', '2.6.1'
   gem 'webrat', '0.7.1'
+end
+
+group :linux do
+  gem "rb-inotify"
+  gem "libnotify"
 end
 
 
